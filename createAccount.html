@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+body{
+    background-image: url("pics/pexels-pixabay-268533.jpg");
+    background: contain fixed no-repeat;
+    height:100vh;
+}
+.registerContainer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    animation: fadeIn 2s alternate linear;
+}
+h1{ 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    font-size: 50px;
+    animation: fadeIn 3s alternate linear;
+
+    transform: translateY(80px);
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height:350px;
+    background-color: aliceblue;
+    background:rgba(235, 237, 235, 0.6) ;
+    border-radius: 20px ;
+    
+    animation: glow-top 2s infinite alternate linear;
+}
+.register:hover{
+    background:rgba(235, 237, 235, 0.8) ;
+}
+input,button,h2,a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20px;
+    font-size: 1.1em;
+}
+a:active{
+    color: rgb(255, 247, 0);
+}
+input{
+    background:rgba(235, 237, 235, 0.5) ;
+}
+button{
+    width: 80%;
+     background: linear-gradient(45deg,  rgb(87, 87, 240)0%, rgb(147, 4, 147) 50%, rgb(253, 40, 40)100%);
+    color: white;
+    padding: 5px;
+}
+h2{
+    margin: 30px;
+    font-size: 1.7em ;
+}
+
+@keyframes fadeIn{
+    0%{ opacity:0;}
+    50%{ opacity: 0,5;}
+    100%{ opacity: 1;}
+}
+@keyframes glow-top{
+    0%{box-shadow: 0 0px 20px -5px rgb(253, 40, 40) ;}
+    50%{box-shadow:0 0px 20px -5px rgb(87, 87, 240) ;}
+    100%{box-shadow: 0 0px 20px -5px rgb(147, 4, 147);}
+}
+    </style>
+</head>
+<body>
+    <h1>Registration page</h1>
+    <div class="registerContainer">
+        <div class="register">
+        <form>
+            <h2>Create account</h2>
+            <input type="text" id="user" placeholder="  Username">
+            <input type="email" id="email" placeholder="  Email Address">
+            <input type="text" id="addPassword" placeholder="   Password">
+            <input type="text" id="addPassword" placeholder=" Conform Password">
+            <button type="submit" id="buttonRegister">Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
